@@ -48,6 +48,14 @@ img{
   }
 .navigation {
     display: flex;
+    width: 533px;
+    justify-content: space-between;
+    text-align: right;
+    text-align-last: justify;
+    
+}
+.menuItem{
+    display: inline-flexbox;
 }
 .navigation a{
     font-family: Gilroy-SemiBold;
@@ -59,19 +67,32 @@ img{
     margin-top: 40px;
     margin-bottom: 84px;
     display: flex;
+    justify-content: space-between;
 }
 .topHeader{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 500px;
 }
 .navigation li{
     list-style-type: none;
 }
 .mainContent{
     display: flex;
+    justify-content: space-between;
+}
+.imgMain{
+    max-width: 50%;
 }
 .mainContent__leftSide{
+    max-width: 522px;
 }
-.mainContent__leftSide h2{
+.mainContent__leftSide h1{
     font-family: Gilroy-Bold;
     font-size: 60px;
     color: #000;
@@ -82,14 +103,23 @@ img{
     font-size: 20px;
     color: #888;
     margin-bottom: 37px;
+    max-width: 466px;
+}
+.mainContent__leftSide-btnList{
+    display: flex;
+    gap: 72px;
+    align-items: center;
 }
 .mainContent__leftSide-btnList .startBtn{
+    padding: 15px 35px;
     background: #f25822;
     border-radius: 50%;
     border: none;
     font-size: 15px;
     font-family: Gilroy-Bold;
     color: #fff;
+    width: 140px;
+    height: 50px;
     cursor: pointer;
 
 }
@@ -109,4 +139,5 @@ footer{
 }
 .logos{
     display: flex;
+    justify-content: space-between;
 }
